@@ -16,6 +16,6 @@ connectDb()
 .then(()=>{
     console.log('dbconnection succeeded')
     app.listen(port,
-        ()=>console.log('server started at: 3000'))
+    ()=>console.log('server started at: 3000'))
 })
 .catch(err=>console.log(err));
