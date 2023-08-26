@@ -16,7 +16,7 @@ router.get('/', (req, res, next)=>{
 })
 
 router.get('/:id', validateDbId, (req, res, next)=>{
-  //Employees.findById({_id:req.parms.id})         2.employeeCurd.getById(req.param.id)
+  //Employees.findById({_id:req.parms.id})        
   //Employees.find({fullName:req.params.fullName})
   employeeCurd.getById({_id:req.params.id})
 
